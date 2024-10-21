@@ -19,13 +19,22 @@
                 <td><input type="text" name="npm"></td>
             </tr>
             <tr>
-                <td>Kelas :</td>
-                <td><input type="text" name="kelas"></td>
+                <td>
+                    <label for="id_kelas">Kelas:</label><br>
+                </td>
+                <td>
+                    <select name="kelas_id" id="kelas_id" required>
+                        @foreach ($kelas as $kelasItem)
+                            <option value="{{ $kelasItem->id }}">{{ $kelasItem->nama_kelas }}</option>
+                        @endforeach
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" value="Submit"></td>
             </tr>
         </table>
     </form>
+
 </body>
 </html>

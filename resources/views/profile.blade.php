@@ -11,9 +11,9 @@
             <div style="width: 120px; height: 120px; border-radius: 50%; background-color: #ddd; margin-bottom: 20px;"></div> <!-- Profile picture placeholder -->
         </div>
         <div style="display: flex; flex-direction: column; gap: 10px;">
-            <div style="background-color: #e0e0e0; padding: 10px 20px; border-radius: 5px; width: 200px; text-align: center;">Nama: <?= $nama ?></div>
-            <div style="background-color: #e0e0e0; padding: 10px 20px; border-radius: 5px; width: 200px; text-align: center;">Kelas: <?= $kelas ?></div>
-            <div style="background-color: #e0e0e0; padding: 10px 20px; border-radius: 5px; width: 200px; text-align: center;">NPM: <?= $npm ?></div>
+            <div style="background-color: #e0e0e0; padding: 10px 20px; border-radius: 5px; width: 200px; text-align: center;">Nama: {{ $nama }}</div>
+            <div style="background-color: #e0e0e0; padding: 10px 20px; border-radius: 5px; width: 200px; text-align: center;">NPM: {{ $npm }}</div>
+            <div style="background-color: #e0e0e0; padding: 10px 20px; border-radius: 5px; width: 200px; text-align: center;">Kelas: {{ $nama_kelas ?? 'kelas tidak ditemukan'}} </div>
         </div>
     </div>
 </body>
